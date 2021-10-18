@@ -87,7 +87,7 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) & !isGameStarted)
         {
-            if (EventSystem.current.IsPointerOverGameObject())
+            if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
             {
                 return;
             }
