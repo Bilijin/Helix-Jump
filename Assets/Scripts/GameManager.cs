@@ -24,12 +24,15 @@ public class GameManager : MonoBehaviour
     public static bool mute = false;
     public static bool isGameStarted;
 
+    public static int numPassedCombo;
+
     private void Awake()
     {
         //PlayerPrefs.SetInt("CurrentLevelIndex", 1);
         //PlayerPrefs.SetInt("HighScore", 0);
         currentLevelIdx = PlayerPrefs.GetInt("CurrentLevelIndex", 1);
         noOfPassedRings = 0;
+        numPassedCombo = 0;
     }
 
     // Start is called before the first frame update

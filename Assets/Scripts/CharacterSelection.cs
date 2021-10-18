@@ -16,6 +16,7 @@ public class CharacterSelection : MonoBehaviour
         }
 
         characters[selectedCharacter].SetActive(true);
+        Player.characterSelectedIdx = selectedCharacter;
     }
 
     // Update is called once per frame
